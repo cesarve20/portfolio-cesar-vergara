@@ -17,7 +17,7 @@ export const profile = {
     availability: "Disponible para nuevas oportunidades",
     socials: [
       { name: "GitHub", url: "https://github.com/cesarve20", icon: Github },
-      { name: "LinkedIn", url: "https://linkedin.com/in/linkdIn-Cesar-Vergara", icon: Linkedin },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/cesarvergara20/", icon: Linkedin },
       { name: "Email", url: "mailto:cesarvergaragu@gmail.com", icon: Mail },
     ]
   },
@@ -37,6 +37,12 @@ export const profile = {
       institution: "CoderHouse",
       period: "2024",
       desc: "Diploma certificado en tecnologías frontend modernas."
+    },
+     {
+      degree: "Certificación Estudio lengua Inglés",
+      institution: "Distrito lenguas",
+      period: "2024",
+      desc: "Diploma certificado en alcanzar el nivel B2."
     }
   ],
   skills: [
@@ -71,7 +77,7 @@ export const profile = {
       title: "VitalDent (Ver 1.0)",
       desc: "Sistema integral de gestión para consultorio odontológico. Incluye gestión de pacientes y turnos.",
       tech: ["React", "Node.js", "MySQL"],
-      link: "#",
+      link: "https://vital-dent-app.vercel.app/",
       type: "Full Stack"
     },
     {
@@ -99,14 +105,14 @@ export const profile = {
       title: "Ibit Website",
       desc: "Plataforma web de guías y estrategias para impulsar campañas de publicidad digital.",
       tech: ["React", "Tailwind"],
-      link: "#",
+      link: "https://ibit-website.vercel.app/",
       type: "Web App"
     },
     {
       title: "Antigravity System",
       desc: "Aplicación de gestión de tareas (To-Do List) con interfaz minimalista. Permite crear, marcar y eliminar tareas dinámicamente.",
       tech: ["React", "Vite", "CSS Modules"], 
-      link: "#",
+      link: "https://antigravity-system.vercel.app/",
       type: "Web App"
     }
   ]
