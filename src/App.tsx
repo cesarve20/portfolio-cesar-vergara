@@ -20,7 +20,6 @@ function App() {
               {profile.personal.role}
             </h2>
                 <div className="flex gap-4">
-                  {/* Reemplaza el <button> anterior por este <a> */}
                   <a 
                     href="/CV-Cesar-Vergara.pdf" 
                     download 
@@ -34,6 +33,7 @@ function App() {
                     key={social.name} 
                     href={social.url}
                     target="_blank"
+                    rel="noreferrer" // Agregué esto por seguridad
                     className="p-3 bg-sand-light rounded-xl hover:bg-sand transition-colors text-coffee"
                     title={social.name}
                   >
@@ -84,7 +84,21 @@ function App() {
                   <div key={index} className="relative pl-4 border-l-2 border-sand">
                     <h4 className="font-bold text-sm text-coffee">{edu.degree}</h4>
                     <p className="text-xs text-caoba font-medium mt-1">{edu.institution}</p>
-                    <p className="text-xs text-gray-500 mt-1">{edu.period}</p>
+                    <p className="text-xs text-gray-500 mt-1 mb-2">{edu.period}</p>
+                    
+                    {/* --- AQUÍ ESTÁ EL CAMBIO --- */}
+                    {edu.link && edu.link !== "" && (
+                      <a 
+                        href={edu.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-1 text-[10px] font-bold text-white bg-caoba px-2 py-1 rounded hover:bg-coffee transition-colors"
+                      >
+                        Ver Credencial 📜
+                      </a>
+                    )}
+                    {/* --------------------------- */}
+                    
                   </div>
                 ))}
               </div>
@@ -102,7 +116,7 @@ function App() {
                       <span className="px-2 py-1 bg-white rounded-md text-[10px] font-bold text-caoba uppercase tracking-wider">
                         {project.type}
                       </span>
-                      <a href={project.link} className="text-gray-400 hover:text-caoba">
+                      <a href={project.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-caoba">
                         <ExternalLink size={18} />
                       </a>
                     </div>

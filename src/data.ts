@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-// Importamos los logos oficiales (cambiamos Postman por Insomnia)
+// Importamos los logos oficiales
 import { 
   SiHtml5, SiCss3, SiJavascript, SiTypescript, 
   SiReact, SiMysql, SiSpring, SiPhp, SiLaravel, 
@@ -30,19 +30,22 @@ export const profile = {
       degree: "Tecnicatura en Análisis de Sistemas",
       institution: "Escuela Da Vinci",
       period: "2022 - 2026 (En curso)",
-      desc: "Promedio destacado. Enfoque en arquitectura de software y POO."
+      desc: "Promedio destacado. Enfoque en arquitectura de software y POO.",
+      link: "" // Enlace vacío para evitar error
     },
     {
       degree: "Certificación Desarrollo Web",
       institution: "CoderHouse",
       period: "2024",
-      desc: "Diploma certificado en tecnologías frontend modernas."
+      desc: "Diploma certificado en tecnologías frontend modernas.",
+      link: "/Certificado-CoderHouse.jpg"
     },
-     {
+    {
       degree: "Certificación Estudio lengua Inglés",
       institution: "Distrito lenguas",
       period: "2024",
-      desc: "Diploma certificado en alcanzar el nivel B2."
+      desc: "Diploma certificado en alcanzar el nivel B2.",
+      link: "/Certificado-ingles-B2.pdf"
     }
   ],
   skills: [
@@ -69,7 +72,7 @@ export const profile = {
     { name: "MySQL", type: "Database", icon: SiMysql },
     { name: "MongoDB", type: "Database", icon: SiMongodb },
     { name: "Git/GitHub", type: "Tools", icon: SiGit },
-    { name: "Insomnia", type: "Tools", icon: SiInsomnia },   // <--- ¡Aquí está el cambio!
+    { name: "Insomnia", type: "Tools", icon: SiInsomnia },
     { name: "Eclipse", type: "Tools", icon: SiEclipseide },
   ],
   projects: [
