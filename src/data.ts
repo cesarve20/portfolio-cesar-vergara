@@ -117,6 +117,13 @@ export const profile = {
       tech: ["React", "Vite", "CSS Modules"], 
       link: "https://antigravity-system.vercel.app/",
       type: "Web App"
+    },
+     {
+      title: "Valance app",
+      desc: "Aplicación web de gestión de finanzas personales. Permite registrar ingresos, gastos y visualizar estadísticas financieras con gráficos interactivos. También cuenta con autenticación de usuarios y almacenamiento de datos en localStorage para persistencia.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "Prisma", "PostgreSQL", "Gemini AI"],
+      link: "https://valance-app.vercel.app/",
+      type: "Web App"
     }
   ]
 };

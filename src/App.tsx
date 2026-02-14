@@ -21,7 +21,7 @@ function App() {
             </h2>
                 <div className="flex gap-4">
                   <a 
-                    href="/CV-Cesar-Vergara.pdf" 
+                    href="/CESAR-VERA-CV.pdf" 
                     download 
                     className="bg-coffee text-white px-6 py-3 rounded-xl font-medium hover:bg-caoba transition-colors flex items-center gap-2 cursor-pointer"
                   >
