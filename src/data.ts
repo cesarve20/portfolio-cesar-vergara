@@ -1,5 +1,4 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-// Importamos los logos oficiales
 import { 
   SiHtml5, SiCss3, SiJavascript, SiTypescript, 
   SiReact, SiMysql, SiSpring, SiPhp, SiLaravel, 
@@ -11,7 +10,7 @@ import { FaJava } from "react-icons/fa";
 export const profile = {
   personal: {
     name: "Cesar Vergara",
-    role: "Full Stack Developer & Systems Analyst Student",
+    role: "Analista de Sistemas Jr & Desarrollador Full Stack",
     location: "CABA, Buenos Aires",
     email: "cesarvergaragu@gmail.com",
     availability: "Disponible para nuevas oportunidades",
@@ -23,7 +22,7 @@ export const profile = {
   },
   about: {
     title: "Sobre Mí",
-    description: "Desarrollador Web Junior y estudiante avanzado de Análisis de Sistemas (5° semestre). Me especializo en transformar problemas complejos en soluciones lógicas utilizando Java, PHP y el ecosistema JavaScript. Mi enfoque combina la capacidad analítica con una rápida adaptación a nuevas tecnologías.",
+    description: "Desarrollador FullStack junior y Analista de sistemas. Me especializo en transformar problemas complejos en soluciones lógicas utilizando Java, PHP y el ecosistema JavaScript. Mi enfoque combina la capacidad analítica con una rápida adaptación a nuevas tecnologías.",
   },
   education: [
     {
@@ -31,7 +30,7 @@ export const profile = {
       institution: "Escuela Da Vinci",
       period: "2022 - 2026 (En curso)",
       desc: "Promedio destacado. Enfoque en arquitectura de software y POO.",
-      link: "" // Enlace vacío para evitar error
+      link: "" 
     },
     {
       degree: "Certificación Desarrollo Web",
@@ -49,14 +48,12 @@ export const profile = {
     }
   ],
   skills: [
-    // --- BACKEND ---
     { name: "Java", type: "Backend", icon: FaJava },
     { name: "Spring Boot", type: "Backend", icon: SiSpring },
     { name: "Node.js", type: "Backend", icon: SiNodedotjs },
     { name: "PHP", type: "Backend", icon: SiPhp },
     { name: "Laravel", type: "Backend", icon: SiLaravel },
     
-    // --- FRONTEND ---
     { name: "JavaScript", type: "Frontend", icon: SiJavascript },
     { name: "TypeScript", type: "Frontend", icon: SiTypescript },
     { name: "React", type: "Frontend", icon: SiReact },
@@ -64,11 +61,9 @@ export const profile = {
     { name: "CSS3", type: "Frontend", icon: SiCss3 },
     { name: "Bootstrap", type: "Frontend", icon: SiBootstrap },
 
-    // --- MOBILE ---
     { name: "Kotlin", type: "Mobile", icon: SiKotlin },
     { name: "Android SDK", type: "Mobile", icon: SiAndroid },
 
-    // --- DATA & TOOLS ---
     { name: "MySQL", type: "Database", icon: SiMysql },
     { name: "MongoDB", type: "Database", icon: SiMongodb },
     { name: "Git/GitHub", type: "Tools", icon: SiGit },
@@ -81,14 +76,32 @@ export const profile = {
       desc: "Sistema integral de gestión para consultorio odontológico. Incluye gestión de pacientes y turnos.",
       tech: ["React", "Node.js", "MySQL"],
       link: "https://vital-dent-app.vercel.app/",
-      type: "Full Stack"
+      type: "Full Stack",
+      image: "/VitalDent.png"
     },
     {
-      title: "Sistema Bancario",
-      desc: "Simulación de cajero automático (ATM) con operaciones transaccionales y gestión de usuarios.",
-      tech: ["Java", "MySQL", "Eclipse"],
-      link: "https://github.com/cesarve20",
-      type: "Desktop"
+      title: "Valance app",
+      desc: "Aplicación web de gestión de finanzas personales. Permite registrar ingresos, gastos y visualizar estadísticas financieras con gráficos interactivos.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
+      link: "https://valance-app.vercel.app/",
+      type: "Web App",
+      image: "/Valance.png"
+    },
+    {
+      title: "Ibit Website",
+      desc: "Plataforma web de guías y estrategias para impulsar campañas de publicidad digital.",
+      tech: ["React", "Tailwind"],
+      link: "https://ibit-website.vercel.app/",
+      type: "Web App",
+      image: "/Ibit-Website.png"
+    },
+    {
+      title: "Antigravity System",
+      desc: "Aplicación de gestión de tareas (To-Do List) con interfaz minimalista. Permite crear, marcar y eliminar tareas dinámicamente.",
+      tech: ["React", "Vite", "CSS Modules"], 
+      link: "https://antigravity-system.vercel.app/",
+      type: "Web App",
+      image: "/antigravity.png"
     },
     {
       title: "Ensobrados",
@@ -98,32 +111,18 @@ export const profile = {
       type: "Mobile"
     },
     {
+      title: "Sistema Bancario",
+      desc: "Simulación de cajero automático (ATM) con operaciones transaccionales y gestión de usuarios.",
+      tech: ["Java", "MySQL", "Eclipse"],
+      link: "https://github.com/cesarve20",
+      type: "Desktop"
+    },
+    {
       title: "Biblioteca Digital",
       desc: "Gestión de préstamos y devoluciones con interfaz gráfica JFrame y persistencia de datos.",
       tech: ["Java", "Swing", "MySQL"],
       link: "https://github.com/cesarve20/BibliotecaDigital",
       type: "Desktop"
-    },
-    {
-      title: "Ibit Website",
-      desc: "Plataforma web de guías y estrategias para impulsar campañas de publicidad digital.",
-      tech: ["React", "Tailwind"],
-      link: "https://ibit-website.vercel.app/",
-      type: "Web App"
-    },
-    {
-      title: "Antigravity System",
-      desc: "Aplicación de gestión de tareas (To-Do List) con interfaz minimalista. Permite crear, marcar y eliminar tareas dinámicamente.",
-      tech: ["React", "Vite", "CSS Modules"], 
-      link: "https://antigravity-system.vercel.app/",
-      type: "Web App"
-    },
-     {
-      title: "Valance app",
-      desc: "Aplicación web de gestión de finanzas personales. Permite registrar ingresos, gastos y visualizar estadísticas financieras con gráficos interactivos. También cuenta con autenticación de usuarios y almacenamiento de datos en localStorage para persistencia.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "Prisma", "PostgreSQL", "Gemini AI"],
-      link: "https://valance-app.vercel.app/",
-      type: "Web App"
     }
   ]
 };

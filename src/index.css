@@ -5,3 +5,20 @@
 body {
   @apply bg-cream text-coffee;
 }
+
+/* Animación de Rompecabezas (Fade In Up) */
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
